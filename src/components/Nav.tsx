@@ -29,7 +29,7 @@ const Logo = () => (
 const Burger = () => {
     const [open, setOpen] = React.useState(false);
     return (
-        <button onClick={() => setOpen(!open)}>
+        <button onClick={() => setOpen(!open)} className="md:hidden">
             {open ? <GiHamburgerMenu fontSize="27" /> : <AiOutlineClose fontSize="27"/>}
         </button>
     )
