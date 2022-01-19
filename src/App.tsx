@@ -1,4 +1,5 @@
 import * as React from 'react';
+import Router from './Router'
 
 import Nav from './components/Nav'
 
@@ -9,7 +10,7 @@ const App = () => {
         <Nav />
       </header>
       <main>
-        test
+        <Router />
       </main>
       <footer>
 
