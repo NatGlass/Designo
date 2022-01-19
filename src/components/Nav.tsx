@@ -7,7 +7,7 @@ import LogoImage from '../assets/shared/desktop/logo-dark.png';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { AiOutlineClose } from 'react-icons/ai';
 
-const Container = ({ children }: { children: React.ReactNode}) => (
+const Container = ({ children }: { children: React.ReactNode }) => (
     <nav className="
         flex w-full z-10 justify-between items-center
         h-[96px] px-[24px]
@@ -25,30 +25,55 @@ const Logo = () => (
     </Link>
 );
 
-const MobileMenu = () => {
+const Links = () => {
+    const commonStyles = "text-[white] text-2xl uppercase list-none md:text-black md:text-[16px] md:hover:underline"
     return (
-        <div className="absolute ">
-            working
-        </div>
+        <>
+            <Link to=""><li className={commonStyles}>our company</li></Link>
+            <Link to=""><li className={commonStyles}>locations</li></Link>
+            <Link to=""><li className={commonStyles}>contact</li></Link>
+        </>
+    );
+};
 
-    )
-}
+const MobileMenu = () => (
+    <div className="absolute top-[96px] left-0 w-full h-[235px] bg-black px-[48px] py-[48px]
+        md:hidden
+        ">
+        <ul className="flex flex-col w-full h-full justify-between">
+            <Links />
+        </ul>
+        {/* overlay */}
+        <div className="fixed top-[331px] left-0 w-full h-screen bg-black opacity-60 " />
+    </div>
+);
+
+const DesktopMenu = ({ children }: { children: React.ReactNode }) => (
+    <div className="hidden md:block">
+        <ul className="flex justify-between w-[370px]">
+            {children}
+        </ul>
+    </div>
+);
 
 const Nav: React.FC = () => {
     const [open, setOpen] = useState(false);
-
     return (
         <Container>
             <Logo />
+
             {/* mobile nav */}
             <button onClick={() => setOpen(!open)} className="md:hidden">
-                {open ? <AiOutlineClose fontSize="27" /> : <GiHamburgerMenu fontSize="27"/>}
+                {open ? <AiOutlineClose fontSize="30" /> : <GiHamburgerMenu fontSize="30" />}
             </button>
             {open && (<MobileMenu />)}
 
-
+            {/* tablet & desktop nav */}
+            <DesktopMenu>
+                <Links />
+            </DesktopMenu>
         </Container>
-  )
+    );
 };
 
 export default Nav;
