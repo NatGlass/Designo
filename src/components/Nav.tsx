@@ -7,7 +7,7 @@ import LogoImage from '../assets/shared/desktop/logo-dark.png';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { AiOutlineClose } from 'react-icons/ai';
 
-const Container = ({ children }: { children: React.ReactNode }) => (
+const Container = ({ children }: { children: React.ReactNode}) => (
     <nav className="
         flex w-full z-10 justify-between items-center
         h-[96px] px-[24px]
@@ -25,25 +25,28 @@ const Logo = () => (
     </Link>
 );
 
-
-const Burger = () => {
-    const [open, setOpen] = React.useState(false);
+const MobileMenu = () => {
     return (
-        <button onClick={() => setOpen(!open)} className="md:hidden">
-            {open ? <GiHamburgerMenu fontSize="27" /> : <AiOutlineClose fontSize="27"/>}
-        </button>
+        <div className="absolute ">
+            working
+        </div>
+
     )
 }
 
-
-
-
 const Nav: React.FC = () => {
+    const [open, setOpen] = useState(false);
 
     return (
         <Container>
             <Logo />
-            <Burger />
+            {/* mobile nav */}
+            <button onClick={() => setOpen(!open)} className="md:hidden">
+                {open ? <AiOutlineClose fontSize="27" /> : <GiHamburgerMenu fontSize="27"/>}
+            </button>
+            {open && (<MobileMenu />)}
+
+
         </Container>
   )
 };

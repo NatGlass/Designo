@@ -1,6 +1,12 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
+    screens: {
+      sm: '480px',
+      md: '768px',
+      lg: '976px',
+      max: '1111px',
+    },
     colors: {
         peach: "rgb(231, 129, 107)",
         peachLight: "rgb(255, 173, 155)",
