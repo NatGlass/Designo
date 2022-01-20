@@ -21,10 +21,11 @@ const Hero = () => {
             </button>
             <div className="absolute w-[640px] h-[640px] oval rounded-full left-0 md:top-[101px] md:left-1/4 lg:top-0 lg:left-[43%]" />
 
-            <img src={HeroImage} className="absolute top-[390px] left-2/4 -translate-x-2/4 w-[430px] h-[573px]  " />
+            <img src={HeroImage} className="absolute top-[400px] left-2/4 -translate-x-2/4 w-[550px] h-[700px] md:top-[350px] md:w-[550px] md:h-[750px] lg:top-[80px] lg:left-3/4 " />
         </div>
     );
 };
+
 
 
 const Home:React.FC = () => {
