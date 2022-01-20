@@ -23,3 +23,15 @@ export const commonsServicesWeb = "bg-web-small lg:bg-web-large"
 export const commonsServicesApp = "bg-app"
 
 export const commonsServicesGraphic = "bg-graphic"
+
+// icons //
+
+export const commonsIconsContainer = "flex flex-col justify-between w-[90%] h-[1400px] mx-auto md:h-[670px] lg:flex-row lg:w-[95%] lg:h-[410px]"
+
+export const commonsIcon = "flex flex-col justify-center items-center h-[412px] max-w-[700px] text-center mx-auto md:flex-row md:justify-start md:text-left lg:flex-col lg:text-center"
+
+export const commonsIconContent = "md:ml-10 lg:flex-col lg:ml-0 lg:px-2"
+
+export const commonsIconTitle = "text-[20px] uppercase tracking-[5px] my-[16px]"
+
+export const commonsIconText = "text-[16px] max-w-[400px] md:max-w-[450px] "

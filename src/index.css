@@ -12,3 +12,15 @@
     opacity: 0.31;
     transform: matrix(0, -1, -1, 0, 0, 0);
 }
+
+.passionate-t{
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.resourceful-t{
+    transform: matrix(0, 1, 1, 0, 0, 0);
+}
+
+.friendly-t{
+    transform: matrix(0, -1, -1, 0, 0, 0);
+}
