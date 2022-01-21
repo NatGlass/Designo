@@ -72,7 +72,7 @@ const GraphicDesign:React.FC = () => (
     <>
         <Hero />
         <Gallery />
-        <Services /> 
+        <Services />
     </>
 )
 
