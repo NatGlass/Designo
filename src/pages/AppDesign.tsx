@@ -90,7 +90,7 @@ const AppDesign:React.FC = () => (
     <>
         <Hero />
         <Gallery />
-        <Services /> 
+        <Services />
     </>
 )
 

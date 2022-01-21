@@ -100,7 +100,7 @@ const WebDesign:React.FC = () => (
     <>
         <Hero />
         <Gallery />
-        <Services /> 
+        <Services />
     </>
 )
 
