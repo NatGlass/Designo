@@ -17,7 +17,15 @@ module.exports = {
     fontFamily: {
       jost: ["jost", "sans-serif"],
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'web-small': "url('./src/assets/home/desktop/image-web-design-small.jpg')",
+        'web-large': "url('./src/assets/home/desktop/image-web-design-large.jpg')",
+        'app': "url('./src/assets/home/desktop/image-app-design.jpg')",
+        'graphic': "url('./src/assets/home/desktop/image-graphic-design.jpg')",
+        'icon': "linear-gradient(90deg, rgba(93, 2, 2, 0.0001) 0%, rgba(93, 2, 2, 0.497569) 100%);",
+      },
+    },
   },
   plugins: [],
 }

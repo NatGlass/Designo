@@ -38,7 +38,7 @@ export const commonsIconText = "text-[16px] max-w-[400px] md:max-w-[450px]"
 
 // gallery //
 
-export const commonsGalleryContainer = "flex flex-col justify-between w-[90%] h-[3068px] mx-auto my-[60px] md:h-[2030px] md:my-[120px] lg:grid lg:grid-cols-3 lg:w-[95%] lg:h-[988px] lg:my[160px] lg:gap-[20px]"
+export const commonsGalleryContainer = "flex flex-col justify-between w-[90%] mx-auto my-[60px] md:my-[120px] lg:grid lg:grid-cols-3 lg:w-[95%] lg:my[160px] lg:gap-[20px]"
 
 export const commonsGalleryItem = "flex flex-col w-full md:flex-row lg:flex-col"
 
