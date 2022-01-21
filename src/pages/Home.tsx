@@ -40,7 +40,7 @@ const Services = () => (
         </div>
         <div className={`${commonsServicesItem} ${commonsServicesApp}`}>
             <div>
-                <Link to="/">
+                <Link to="/app-design">
                     <h2 className={`${commonsServicesItemTitle}`}>app design</h2>
                     <p className={`${commonsServicesItemText}`}>view projects</p>
                 </Link>

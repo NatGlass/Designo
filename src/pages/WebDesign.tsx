@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom'
-import { commonsHero, commonsH1, commonsHeroText, commonsButton, commonsServicesContainer, commonsServicesItem, commonsServicesItemTitle, commonsServicesItemText, commonsServicesApp, commonsServicesGraphic, commonsGalleryContainer, commonsGalleryItem, commonsGalleryImage, commonsGalleryContentContainer, commonsGalleryItemTitle, commonsGalleryItemText } from '../ConstStyles';
+import { commonsHero, commonsH1, commonsHeroText, commonsServicesContainer, commonsServicesItem, commonsServicesItemTitle, commonsServicesItemText, commonsServicesApp, commonsServicesGraphic, commonsGalleryContainer, commonsGalleryItem, commonsGalleryImage, commonsGalleryContentContainer, commonsGalleryItemTitle, commonsGalleryItemText } from '../ConstStyles';
 import Express from '../assets/web-design/desktop/image-express.jpg'
 import Transfer from '../assets/web-design/desktop/image-transfer.jpg'
 import Photon from '../assets/web-design/desktop/image-photon.jpg'
@@ -10,8 +10,7 @@ import Camp from '../assets/web-design/desktop/image-camp.jpg'
 
 
 const Hero = () => (
-    <div className={`${commonsHero} h-[320px] 
-    md:h-[252px]`}>
+    <div className={`${commonsHero} h-[320px] md:h-[252px]`}>
         <h1 className={`${commonsH1} top-[105px] left-2/4 -translate-x-2/4
         md:top-[64px]`}>
             Web Design
@@ -25,7 +24,7 @@ const Hero = () => (
 );
 
 const Gallery = () => (
-    <div className={`${commonsGalleryContainer}`}>
+    <div className={`${commonsGalleryContainer} h-[3068px] md:h-[2030px] lg:h-[988px]`}>
         <div className={`${commonsGalleryItem}`}>
             <img src={Express} className={`${commonsGalleryImage}`} />
             <div className={`${commonsGalleryContentContainer}`}>
@@ -80,7 +79,7 @@ const Services = () => (
     <div className={`${commonsServicesContainer} h-[524px] md:h-[424px] lg:h-[308px]`}>
         <div className={`${commonsServicesItem} ${commonsServicesApp}`}>
             <div>
-                <Link to="/">
+                <Link to="/app-design">
                     <h2 className={`${commonsServicesItemTitle}`}>app design</h2>
                     <p className={`${commonsServicesItemText}`}>view projects</p>
                 </Link>
@@ -88,7 +87,7 @@ const Services = () => (
         </div>
         <div className={`${commonsServicesItem} ${commonsServicesGraphic}`}>
             <div>
-                <Link to="/">
+                <Link to="/graphic-design">
                     <h2 className={`${commonsServicesItemTitle}`}>graphic design</h2>
                     <p className={`${commonsServicesItemText}`}>view projects</p>
                 </Link>
@@ -97,7 +96,7 @@ const Services = () => (
     </div>
 );
 
-const WebDesign = () => (
+const WebDesign:React.FC = () => (
     <>
         <Hero />
         <Gallery />
