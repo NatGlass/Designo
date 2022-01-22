@@ -24,3 +24,21 @@
 .friendly-t{
     transform: matrix(0, -1, -1, 0, 0, 0);
 }
+
+.about-hero-small{
+    background: url('./assets/about/mobile/image-about-hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about-hero-medium{
+    background: url('./assets/about/tablet/image-about-hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about-hero-large{
+    background: url('./assets/about/desktop/image-about-hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
