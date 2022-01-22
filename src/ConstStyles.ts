@@ -36,6 +36,8 @@ export const commonsIconTitle = "text-[20px] uppercase tracking-[5px] my-[16px]"
 
 export const commonsIconText = "text-[16px] max-w-[400px] md:max-w-[450px]"
 
+export const commonsIconButton = "w-[152px] h-[56px] rounded-[8px] text-[white] bg-peach uppercase tracking-[1px] mt-[5px] hover:opacity-50"
+
 // gallery //
 
 export const commonsGalleryContainer = "flex flex-col justify-between w-[90%] mx-auto my-[60px] md:my-[120px] lg:grid lg:grid-cols-3 lg:w-[95%] lg:my[160px] lg:gap-[20px]"

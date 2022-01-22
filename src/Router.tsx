@@ -8,6 +8,7 @@ import AppDesign from './pages/AppDesign'
 import GraphicDesign from './pages/GraphicDesign'
 import Company from './pages/Company'
 import Locations from './pages/Locations'
+import Contact from './pages/Contact'
 
 
 const Router = () => {
@@ -19,6 +20,7 @@ const Router = () => {
       <Route path="/graphic-design" element={<GraphicDesign />}></Route>
       <Route path="/company" element={<Company />}></Route>
       <Route path="/locations" element={<Locations />}></Route>
+      <Route path="/contact" element={<Contact />}></Route>
     </Routes>
   );
 };
