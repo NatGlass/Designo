@@ -10,7 +10,7 @@ import UK from '../assets/shared/desktop/illustration-united-kingdom.svg'
 const commonInputs = "bg-[transparent] text-[white] placeholder:opacity-50 placeholder:text-[white] border-b-[1px] border-[white] px-[10px] py-[5px] outline-none focus:placeholder:opacity-100 focus:border-b-[3px]"
 
 const Hero = () => (
-    <div className={`${commonsHero} h-[764px] md:h-[711px] md:px-[58px] lg:flex lg:h-[480px]`}>
+    <div className={`${commonsHero} h-[764px] mb-[60px] md:h-[711px] md:px-[58px] md:mb-[120px] lg:flex lg:h-[480px] lg:mb-[160px]`}>
         <div className="px-[24px] py-[72px] md:py-[71px]">
             <h1 className="text-[white] text-[32px] text-center md:text-[48px] md:text-left lg:max-w-[540px]">Contact Us</h1>
             <p className="text-[white] text-center mt-[24px] md:text-left lg:max-w-[540px]">
@@ -29,11 +29,49 @@ const Hero = () => (
     </div>
 );
 
+const Icons = () => (
+  <div className={`${commonsIconsContainer}`}>
+    <div className={`${commonsIcon} relative text-center`}>
+      <div className="absolute top-[25px] w-[202px] h-[202px] bg-icon canada-t rounded-full -z-10 opacity-20 md:top-[10px] lg:top-0" />
+      <img src={Canada} />
+      <div className={`${commonsIconContent}`}>
+        <h3 className={`${commonsIconTitle}`}>canada</h3>
+        <Link to="/locations">
+          <button className={`${commonsIconButton}`}>see location</button>
+        </Link>
+      </div>
+    </div>
+
+    <div className={`${commonsIcon} relative text-center`}>
+      <div className="absolute top-[25px] w-[202px] h-[202px] bg-icon australia-t rounded-full -z-10 opacity-20 md:top-[10px] lg:top-0" />
+      <img src={Australia} />
+      <div className={`${commonsIconContent}`}>
+        <h3 className={`${commonsIconTitle}`}>australia</h3>
+        <Link to="/locations">
+          <button className={`${commonsIconButton}`}>see location</button>
+        </Link>
+      </div>
+    </div>
+
+    <div className={`${commonsIcon} relative text-center`}>
+      <div className="absolute top-[25px] w-[202px] h-[202px] bg-icon uk-t rounded-full -z-10 opacity-20 md:top-[10px] lg:top-0" />
+      <img src={UK} />
+      <div className={`${commonsIconContent}`}>
+        <h3 className={`${commonsIconTitle}`}>uk</h3>
+        <Link to="/locations">
+          <button className={`${commonsIconButton}`}>see location</button>
+        </Link>
+      </div>
+    </div>
+  </div>
+);
 
 
-const Contact = () => (
+
+const Contact:React.FC = () => (
     <>
         <Hero />
+        <Icons />
     </>
 )
 

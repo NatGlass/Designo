@@ -71,7 +71,7 @@ const Icons = () => (
   </div>
 );
 
-const Company = () => (
+const Company:React.FC = () => (
   <>
     <Hero />
     <div className="flex flex-col w-full h-[865px] mb-[60px] mx-auto md:w-[90%] md:h-[736px] md:mb-[120px] lg:flex-row lg:w-[95%] lg:h-[640px] lg:mb-[160px] max:w-full">
