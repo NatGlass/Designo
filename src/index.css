@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 *,*::before,*::after{
-    font-family: 'jost';
+    font-family: 'jost', sans-serif;
 }
 
 .oval{

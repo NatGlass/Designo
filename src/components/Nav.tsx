@@ -28,7 +28,7 @@ const Links = ({ setOpen }: { setOpen: Function }) => {
         <>
             <Link to="/company" onClick={() => setOpen(false)}><li className={commonStyles}>our company</li></Link>
             <Link to="/locations" onClick={() => setOpen(false)}><li className={commonStyles}>locations</li></Link>
-            <Link to="/" onClick={() => setOpen(false)}><li className={commonStyles}>contact</li></Link>
+            <Link to="/contact" onClick={() => setOpen(false)}><li className={commonStyles}>contact</li></Link>
         </>
     );
 };
